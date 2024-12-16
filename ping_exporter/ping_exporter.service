@@ -1,0 +1,12 @@
+[Unit]
+Description=Ping Exporter
+After=network.target
+
+[Service]
+User=root
+Group=root
+Type=simple
+ExecStart=/usr/local/bin/ping_exporter --config.path=/etc/ping_exporter/config.yml
+
+[Install]
+WantedBy=multi-user.target
