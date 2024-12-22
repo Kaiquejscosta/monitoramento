@@ -22,31 +22,41 @@
   "links": [],
   "panels": [
     {
-      "description": "monitoramento de ping",
+      "description": "Dashboard List",
       "fieldConfig": {
         "defaults": {},
         "overrides": []
       },
       "gridPos": {
-        "h": 9,
-        "w": 4,
+        "h": 15,
+        "w": 5,
         "x": 0,
         "y": 0
       },
-      "id": 3,
+      "id": 6,
+      "links": [
+        {
+          "targetBlank": true,
+          "title": "Prometheus",
+          "url": "http://192.168.18.171:9090/query"
+        }
+      ],
       "options": {
-        "code": {
-          "language": "plaintext",
-          "showLineNumbers": false,
-          "showMiniMap": false
-        },
-        "content": "<img src=\"https://i.pinimg.com/736x/42/ba/57/42ba576ed8bf81acc94a1aa71aed43e2.jpg\"/>",
-        "mode": "html"
+        "includeVars": false,
+        "keepTime": false,
+        "maxItems": 10,
+        "query": "",
+        "showFolderNames": true,
+        "showHeadings": false,
+        "showRecentlyViewed": false,
+        "showSearch": true,
+        "showStarred": false,
+        "tags": []
       },
       "pluginVersion": "11.4.0",
-      "title": "Concentrador",
+      "title": "Todos os Dashboards",
       "transparent": true,
-      "type": "text"
+      "type": "dashlist"
     },
     {
       "datasource": {
@@ -142,8 +152,8 @@
       },
       "gridPos": {
         "h": 5,
-        "w": 20,
-        "x": 4,
+        "w": 19,
+        "x": 5,
         "y": 0
       },
       "id": 2,
@@ -234,9 +244,9 @@
         "overrides": []
       },
       "gridPos": {
-        "h": 3,
-        "w": 20,
-        "x": 4,
+        "h": 4,
+        "w": 19,
+        "x": 5,
         "y": 5
       },
       "id": 1,
@@ -330,9 +340,9 @@
       },
       "gridPos": {
         "h": 3,
-        "w": 20,
-        "x": 4,
-        "y": 8
+        "w": 19,
+        "x": 5,
+        "y": 9
       },
       "id": 4,
       "options": {
@@ -483,9 +493,9 @@
       },
       "gridPos": {
         "h": 3,
-        "w": 20,
-        "x": 4,
-        "y": 11
+        "w": 19,
+        "x": 5,
+        "y": 12
       },
       "id": 5,
       "options": {
@@ -582,6 +592,6 @@
   "timezone": "browser",
   "title": "Monitoramento VM",
   "uid": "ae6ymyfx4iqrkd",
-  "version": 52,
+  "version": 56,
   "weekStart": ""
 }
