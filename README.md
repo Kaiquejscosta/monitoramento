@@ -43,11 +43,16 @@ Exportador utilizado para monitoramento de hosts via ICMP (🔢 ping), integrand
 ### 🌐 Configurar o Ping Exporter
 1. Edite o arquivo de configuração do Ping Exporter para incluir os hosts que deseja monitorar.
 2. Certifique-se de que o Prometheus está configurado para coletar métricas do Ping Exporter.
-
+3. Criar serviço com o arquivo ping_exporter.service.
+4. Copiando arquivo `ping_exporter.service` para o diretório `/etc/systemd/system/` para configurar o ping_exporter como um serviço systemd.
+   ```bash
+   systemctl daemon-reload
+   systemctl enable --now ping_exporter.service 
+   ```
 ## 📋 Requisitos
 - 📊 Grafana instalado na máquina ou em outro servidor.
 - 📡 Prometheus configurado nativamente no sistema.
-
+- 🌐 Ping_exporter configurado como serviço e arquivo targets.yml modificado.
 ## ⚙️ Instalação e Execução
 1. Clone o repositório:
    ```bash
@@ -56,23 +61,25 @@ Exportador utilizado para monitoramento de hosts via ICMP (🔢 ping), integrand
    ```
 2. Configure os arquivos de configuração conforme descrito acima.
 3. Reinicie ou inicie os serviços conforme necessário:
+4. OBS: Grafana rodando em Docker, o comando para restartar o container é outro. Para mais informações clique aqui: [Docker](mailto:<https://github.com/Kaiquejscosta/docker>)
    ```bash
    sudo systemctl restart prometheus.service
    sudo systemctl restart grafana-server
    ```
-4. Acesse o Grafana em [http://localhost:3000](http://localhost:3000).
+5. Acesse o Grafana em [http://localhost:3000](http://localhost:3000).
 
 ## 🗂️ Estrutura do Repositório
 ```
 monitoramento/
-├── dashboards/
+├── dashboard_grafana/
 │   ├── exemplo-dashboard1.json
 │   ├── exemplo-dashboard2.json
 ├── prometheus/
 │   ├── prometheus.yml
 │   ├── prometheus.service
 ├── ping_exporter/
-│   ├── config.yml
+│   ├── targets.ym
+|   ├── ping_exporter.service
 └── README.md
 ```
 
