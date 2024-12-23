@@ -90,4 +90,4 @@ Contribuições são bem-vindas! Caso tenha sugestões, melhorias ou novos exemp
 Este projeto está licenciado sob a Licença MIT. Consulte o arquivo [LICENSE](LICENSE) para mais detalhes.
 
 ## 📧 Contato
-Para dúvidas ou sugestões, entre em contato com [Kaique](mailto:<kaiqueliv123@gmail.com>) ou abra uma issue neste repositório.
+Para dúvidas ou sugestões, entre em contato com [Kaique](mailto:<www.linkedin.com/in/kaique-costa-0b25ba1b7>) ou abra uma issue neste repositório.
