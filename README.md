@@ -78,7 +78,7 @@ monitoramento/
 │   ├── prometheus.yml
 │   ├── prometheus.service
 ├── ping_exporter/
-│   ├── targets.ym
+│   ├── targets.yml
 |   ├── ping_exporter.service
 └── README.md
 ```
